@@ -2,6 +2,8 @@
 
 Use the starter kit to get your docs deployed and ready to customize.
 
+This is a test for first commit.
+
 Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
 
 - Guide pages
