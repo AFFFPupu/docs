@@ -1,0 +1,125 @@
+---
+title: "Uploading Content"
+description: "Learn how to upload and manage your content efficiently"
+---
+
+## Overview
+
+Upload your content to the platform using multiple methods and formats. This guide covers all available upload options and best practices.
+
+## Upload Methods
+
+<CardGroup cols={2}>
+<Card title="File Upload" icon="file-arrow-up">
+  Upload individual files directly from your device
+</Card>
+
+<Card title="Bulk Upload" icon="folder-arrow-up">
+  Upload multiple files at once for efficiency
+</Card>
+
+<Card title="URL Import" icon="link">
+  Import content directly from external URLs
+</Card>
+
+<Card title="API Upload" icon="code">
+  Programmatically upload content via API
+</Card>
+</CardGroup>
+
+## Supported File Types
+
+<AccordionGroup>
+<Accordion title="Documents">
+  - PDF (.pdf)
+  - Word Documents (.doc, .docx)
+  - Text Files (.txt)
+  - Markdown (.md, .mdx)
+</Accordion>
+
+<Accordion title="Media Files">
+  - Images (.jpg, .png, .gif, .webp)
+  - Videos (.mp4, .webm, .mov)
+  - Audio (.mp3, .wav, .ogg)
+</Accordion>
+
+<Accordion title="Data Files">
+  - CSV (.csv)
+  - JSON (.json)
+  - XML (.xml)
+</Accordion>
+</AccordionGroup>
+
+## How to Upload Content
+
+<Steps>
+<Step title="Select Upload Method">
+  Choose your preferred upload method from the options above based on your needs.
+  
+  <Tip>
+  Use bulk upload for multiple files to save time.
+  </Tip>
+</Step>
+
+<Step title="Choose Your Files">
+  Select the files you want to upload from your device or provide the URL.
+  
+  <Warning>
+  Maximum file size is 100MB per file. Files larger than this will be rejected.
+  </Warning>
+</Step>
+
+<Step title="Add Metadata">
+  Provide title, description, and tags to make your content easily discoverable.
+  
+  ```json
+  {
+    "title": "My Content",
+    "description": "Brief description of the content",
+    "tags": ["education", "tutorial", "beginner"]
+  }
+  ```
+</Step>
+
+<Step title="Upload and Verify">
+  Click the upload button and wait for confirmation.
+  
+  <Check>
+  You'll see a success message once your content is uploaded successfully.
+  </Check>
+</Step>
+</Steps>
+
+## Best Practices
+
+<Note>
+- Organize files with clear, descriptive names before uploading
+- Add relevant metadata to improve searchability
+- Check file sizes to ensure they meet requirements
+- Use appropriate file formats for your content type
+</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+<Accordion title="Upload failed">
+  - Check your internet connection
+  - Verify file size is under 100MB
+  - Ensure file format is supported
+  - Try uploading again
+</Accordion>
+
+<Accordion title="Slow upload speed">
+  - Check your network bandwidth
+  - Try uploading during off-peak hours
+  - Use wired connection instead of WiFi
+  - Upload fewer files at once
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<Card title="Generating Content" icon="wand-magic-sparkles" href="/features/generating-content">
+  Learn how to generate content using AI tools
+</Card>
+
