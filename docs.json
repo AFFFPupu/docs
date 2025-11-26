@@ -39,6 +39,17 @@
         ]
       },
       {
+        "tab": "Prompt Engineering",
+        "groups": [
+          {
+            "group": "Best Practices",
+            "pages": [
+              "prompt-engineering/prompt-better-in-eduarc"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Use cases",
         "groups": [
           {

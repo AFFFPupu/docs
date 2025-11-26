@@ -1,0 +1,460 @@
+---
+title: "Prompt Better in EduArc"
+description: "Master the art of crafting effective prompts to generate exceptional teaching content with EduArc AI"
+---
+
+## Overview
+
+Learn how to write effective prompts that help EduArc AI generate high-quality teaching content. Good prompts lead to better results, saving you time and creating more engaging educational materials.
+
+<Tip>
+The quality of your AI-generated content is directly proportional to the quality of your prompts. Invest time in crafting clear, detailed prompts.
+</Tip>
+
+## The Anatomy of a Great Prompt
+
+A well-structured prompt contains these key elements:
+
+<CardGroup cols={2}>
+<Card title="Context" icon="info">
+  Background information and setting
+</Card>
+
+<Card title="Task" icon="list-check">
+  What you want the AI to create
+</Card>
+
+<Card title="Audience" icon="users">
+  Who will consume this content
+</Card>
+
+<Card title="Format" icon="table-list">
+  Structure and presentation style
+</Card>
+</CardGroup>
+
+## Prompt Framework
+
+Follow this framework to create effective prompts:
+
+<Steps>
+<Step title="Define Your Goal">
+  Start by clearly stating what you want to create.
+  
+  ```text
+  "Create a lesson plan about..."
+  "Generate a quiz that tests..."
+  "Write a tutorial explaining..."
+  ```
+</Step>
+
+<Step title="Specify the Audience">
+  Describe who will use this content.
+  
+  ```text
+  "...for high school students learning algebra"
+  "...for adult learners new to programming"
+  "...for university biology majors"
+  ```
+  
+  <Tip>
+  Include details about prior knowledge level and learning context.
+  </Tip>
+</Step>
+
+<Step title="Set the Format">
+  Explain how the content should be structured.
+  
+  ```text
+  "Include: learning objectives, key concepts, examples, and practice problems"
+  "Format as: introduction, 3 main sections, conclusion, and assessment"
+  ```
+</Step>
+
+<Step title="Add Constraints">
+  Specify any limitations or requirements.
+  
+  ```text
+  "Length: 800-1000 words"
+  "Reading level: Grade 8"
+  "Include 2 visual diagram descriptions"
+  ```
+</Step>
+</Steps>
+
+## Prompt Examples
+
+### Example 1: Creating a Lesson Plan
+
+<Tabs>
+<Tab title="❌ Weak Prompt">
+  ```text
+  Create a lesson about photosynthesis
+  ```
+  
+  <Warning>
+  Too vague. Missing audience, format, and details about scope.
+  </Warning>
+</Tab>
+
+<Tab title="✅ Strong Prompt">
+  ```text
+  Create a 45-minute lesson plan about photosynthesis for 9th grade 
+  biology students. Include:
+  
+  - Learning objectives (2-3 specific outcomes)
+  - Warm-up activity (5 minutes)
+  - Main lesson with key concepts (25 minutes)
+  - Hands-on demonstration idea (10 minutes)
+  - Assessment questions (5 minutes)
+  
+  Use clear, accessible language and relate concepts to everyday 
+  examples students can understand. Focus on the light-dependent 
+  and light-independent reactions.
+  ```
+  
+  <Check>
+  Specific, detailed, and provides clear structure and requirements.
+  </Check>
+</Tab>
+</Tabs>
+
+### Example 2: Generating a Quiz
+
+<Tabs>
+<Tab title="❌ Weak Prompt">
+  ```text
+  Make a quiz about World War 2
+  ```
+  
+  <Warning>
+  No information about difficulty, question types, or specific topics.
+  </Warning>
+</Tab>
+
+<Tab title="✅ Strong Prompt">
+  ```text
+  Generate a 15-question multiple-choice quiz about World War 2 for 
+  11th grade U.S. History students. Cover these topics:
+  
+  - Causes of the war (3 questions)
+  - Major battles and turning points (4 questions)
+  - Key figures and leaders (3 questions)
+  - Holocaust and war crimes (2 questions)
+  - War's end and aftermath (3 questions)
+  
+  Difficulty: Mix of recall (40%), comprehension (40%), and analysis (20%)
+  Include one incorrect but plausible distractor for each question.
+  Provide the answer key with brief explanations.
+  ```
+  
+  <Check>
+  Comprehensive, with clear topic distribution and difficulty guidelines.
+  </Check>
+</Tab>
+</Tabs>
+
+### Example 3: Writing a Tutorial
+
+<Tabs>
+<Tab title="❌ Weak Prompt">
+  ```text
+  Write a tutorial about Python loops
+  ```
+  
+  <Warning>
+  Missing audience level, scope, and specific learning outcomes.
+  </Warning>
+</Tab>
+
+<Tab title="✅ Strong Prompt">
+  ```text
+  Write a beginner-friendly tutorial about Python loops for adults 
+  with no prior programming experience. Length: 1200-1500 words.
+  
+  Structure:
+  1. Introduction - Why loops matter in programming
+  2. For loops - Syntax, examples, common use cases
+  3. While loops - Syntax, examples, when to use vs for loops
+  4. Loop control - break, continue, and else clauses
+  5. Common mistakes and how to avoid them
+  6. Practice exercises (3 problems, increasing difficulty)
+  
+  Use simple, everyday analogies to explain concepts. Include 
+  code examples that readers can copy and run. Add comments 
+  explaining each line. End with next steps for further learning.
+  ```
+  
+  <Check>
+  Very detailed with clear structure, audience, and pedagogical approach.
+  </Check>
+</Tab>
+</Tabs>
+
+## Advanced Prompting Techniques
+
+### Iterative Refinement
+
+Don't expect perfection on the first try. Refine your prompts based on results.
+
+<AccordionGroup>
+<Accordion title="Start Broad, Then Narrow">
+  Begin with a general prompt, review the output, then add specific constraints 
+  to refine the next iteration.
+  
+  ```text
+  First: "Create a lesson about fractions"
+  Refined: "Create a 30-minute lesson about adding fractions with 
+  unlike denominators for 6th graders who understand basic fractions"
+  ```
+</Accordion>
+
+<Accordion title="Use Follow-up Prompts">
+  Build on previous outputs by referencing them.
+  
+  ```text
+  "Based on the lesson plan above, create 5 formative assessment 
+  questions to check student understanding"
+  ```
+</Accordion>
+
+<Accordion title="Request Variations">
+  Ask for multiple versions to choose from.
+  
+  ```text
+  "Generate 3 different opening hooks for this lesson, each using 
+  a different engagement strategy (question, story, real-world example)"
+  ```
+</Accordion>
+</AccordionGroup>
+
+### Specify Tone and Style
+
+Guide the AI's writing style to match your needs.
+
+<CodeGroup>
+```text Formal Academic
+"Use formal academic language appropriate for a university textbook. 
+Include citations to key research and maintain an objective tone."
+```
+
+```text Conversational
+"Write in a friendly, conversational tone as if explaining to a friend. 
+Use 'you' and 'we' language and incorporate rhetorical questions."
+```
+
+```text Simple/Accessible
+"Use simple language suitable for ESL learners or those with limited 
+vocabulary. Define technical terms when first used. Use short sentences."
+```
+</CodeGroup>
+
+### Include Examples in Your Prompt
+
+Show the AI what you want by providing examples.
+
+<Note>
+When you include sample formats or examples in your prompt, the AI better 
+understands the style and structure you're looking for.
+</Note>
+
+```text
+Create 5 vocabulary exercises similar to this example:
+
+Example:
+Word: "Photosynthesis"
+Definition: The process by which plants make food using sunlight
+Sentence: "Through photosynthesis, the plant converts sunlight into energy."
+Synonym: Food production (plants)
+Related words: Chlorophyll, sunlight, glucose
+```
+
+## Common Mistakes to Avoid
+
+<Warning>
+Avoid these common pitfalls when prompting:
+</Warning>
+
+<AccordionGroup>
+<Accordion title="Being Too Vague">
+  ❌ "Create something about science"
+  
+  ✅ "Create a 10-question quiz about the scientific method for 7th graders"
+</Accordion>
+
+<Accordion title="Overloading a Single Prompt">
+  ❌ "Create a full course with 12 lessons, assessments, rubrics, activities, 
+  and supplementary materials about chemistry"
+  
+  ✅ Break this into multiple prompts, one for each component
+</Accordion>
+
+<Accordion title="Ignoring Context">
+  ❌ "Make this harder" (without showing what "this" refers to)
+  
+  ✅ "Increase the difficulty of the above quiz by adding more complex 
+  problem-solving questions"
+</Accordion>
+
+<Accordion title="Not Specifying Constraints">
+  ❌ "Write a lesson about economics"
+  
+  ✅ "Write a 45-minute lesson about supply and demand for high school 
+  economics, using real-world examples from current events"
+</Accordion>
+</AccordionGroup>
+
+## Prompt Templates
+
+Use these templates as starting points for your own prompts.
+
+### Lesson Plan Template
+
+```text
+Create a [duration] lesson plan about [topic] for [grade level/audience].
+
+Learning Objectives:
+- [List 2-3 specific, measurable objectives]
+
+Include:
+1. Warm-up/Hook ([duration])
+2. Direct instruction ([duration])
+3. Guided practice ([duration])
+4. Independent practice ([duration])
+5. Assessment ([duration])
+
+Constraints:
+- [Reading level, resources available, etc.]
+
+Additional notes:
+- [Any special considerations]
+```
+
+### Assessment Template
+
+```text
+Generate a [type] assessment about [topic] for [audience].
+
+Format:
+- [Number] questions
+- Question types: [multiple choice, short answer, essay, etc.]
+- Difficulty distribution: [percentage breakdown]
+
+Topics to cover:
+1. [Topic 1] - [number] questions
+2. [Topic 2] - [number] questions
+3. [Topic 3] - [number] questions
+
+Include:
+- Answer key
+- Grading rubric (if applicable)
+- Estimated completion time
+```
+
+### Tutorial Template
+
+```text
+Write a [level] tutorial about [topic] for [audience].
+
+Length: [word count or reading time]
+
+Prerequisites: [What learners should know beforehand]
+
+Structure:
+1. [Section 1]
+2. [Section 2]
+3. [Section 3]
+...
+
+Include:
+- [Examples, exercises, diagrams, etc.]
+
+Tone: [Formal, conversational, etc.]
+
+End with: [Summary, next steps, resources]
+```
+
+## Testing Your Prompts
+
+Evaluate your prompt quality with these criteria:
+
+<CardGroup cols={2}>
+<Card title="Specificity" icon="bullseye">
+  Is the goal crystal clear?
+</Card>
+
+<Card title="Context" icon="book">
+  Did you provide enough background?
+</Card>
+
+<Card title="Constraints" icon="ruler">
+  Are limitations and requirements stated?
+</Card>
+
+<Card title="Actionability" icon="hand-pointer">
+  Can the AI act on this immediately?
+</Card>
+</CardGroup>
+
+## Best Practices Checklist
+
+Before submitting your prompt, verify:
+
+<Check>
+✓ Clearly defined goal and task
+</Check>
+
+<Check>
+✓ Specified target audience and their level
+</Check>
+
+<Check>
+✓ Outlined format and structure requirements
+</Check>
+
+<Check>
+✓ Included length or time constraints
+</Check>
+
+<Check>
+✓ Provided examples or style guidance
+</Check>
+
+<Check>
+✓ Listed specific topics or subtopics to cover
+</Check>
+
+<Check>
+✓ Stated any special requirements or constraints
+</Check>
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Start Creating" icon="wand-magic-sparkles" href="/features/generating-content">
+  Apply these techniques to generate your first content
+</Card>
+
+<Card title="See Examples" icon="lightbulb" href="/use-cases/community-showcase">
+  Explore content created by other educators
+</Card>
+</CardGroup>
+
+## Resources
+
+<AccordionGroup>
+<Accordion title="Recommended Reading">
+  - **"The Prompt Engineering Guide"** - Comprehensive resource on AI prompting
+  - **"Teaching with AI"** - Best practices for educational AI tools
+  - **EduArc Blog** - Weekly tips and examples from our community
+</Accordion>
+
+<Accordion title="Video Tutorials">
+  Coming soon: Video series on advanced prompting techniques
+</Accordion>
+
+<Accordion title="Community Support">
+  Join our Discord community to share prompts and get feedback from other educators
+</Accordion>
+</AccordionGroup>
+
