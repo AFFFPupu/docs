@@ -1,0 +1,463 @@
+---
+title: "Core Components"
+description: "Understanding the building blocks of interactive educational content in EduArc AI"
+icon: "puzzle-piece"
+---
+
+EduArc AI structures educational content using specialized components that enhance learning and engagement. These components transform static text into interactive, effective teaching materials.
+
+## Content Components Overview
+
+Each component serves a specific pedagogical purpose, helping students learn more effectively through varied interaction and presentation styles.
+
+<CardGroup cols={3}>
+  <Card title="Definitions" icon="book-open">
+    Key terms and concepts
+  </Card>
+  
+  <Card title="Quizzes" icon="clipboard-question">
+    Knowledge assessment
+  </Card>
+  
+  <Card title="Flashcards" icon="layer-group">
+    Memory reinforcement
+  </Card>
+  
+  <Card title="Examples" icon="lightbulb">
+    Real-world applications
+  </Card>
+  
+  <Card title="Notes" icon="note-sticky">
+    Important callouts
+  </Card>
+  
+  <Card title="Code Blocks" icon="code">
+    Programming examples
+  </Card>
+</CardGroup>
+
+---
+
+## Definition Component
+
+Highlight and explain important terms and concepts with dedicated definition blocks.
+
+### Structure
+
+```markdown
+<Definition term="Photosynthesis">
+  The process by which green plants use sunlight to synthesize nutrients from carbon dioxide and water, 
+  generating oxygen as a byproduct.
+</Definition>
+```
+
+### Best Practices
+
+<AccordionGroup>
+  <Accordion icon="check" title="When to Use">
+    - Introducing new vocabulary
+    - Clarifying technical terms
+    - Establishing foundational concepts
+    - Creating a glossary-style reference
+  </Accordion>
+
+  <Accordion icon="star" title="Writing Effective Definitions">
+    - Keep definitions concise but complete
+    - Use clear, accessible language
+    - Include pronunciation for difficult terms
+    - Add etymology for language learning contexts
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Students can click on definition terms to expand/collapse explanations, making it easy to reference terms throughout your content.
+</Tip>
+
+---
+
+## Quiz Component
+
+Create interactive assessments to test understanding and reinforce learning.
+
+### Quiz Types
+
+<Tabs>
+  <Tab title="Multiple Choice">
+    Present a question with several options, only one correct.
+    
+    ```markdown
+    <Quiz>
+      <Question text="What is the powerhouse of the cell?">
+        <Option correct>Mitochondria</Option>
+        <Option>Nucleus</Option>
+        <Option>Ribosome</Option>
+        <Option>Chloroplast</Option>
+      </Question>
+    </Quiz>
+    ```
+    
+    **Best for:** Fact recall, concept identification, eliminating misconceptions
+  </Tab>
+  
+  <Tab title="True/False">
+    Simple binary choice for quick knowledge checks.
+    
+    ```markdown
+    <Quiz>
+      <Question text="The Earth revolves around the Sun." type="true-false">
+        <Option correct>True</Option>
+        <Option>False</Option>
+      </Question>
+    </Quiz>
+    ```
+    
+    **Best for:** Verifying basic understanding, quick comprehension checks
+  </Tab>
+  
+  <Tab title="Multiple Select">
+    Allow students to select multiple correct answers.
+    
+    ```markdown
+    <Quiz type="multiple-select">
+      <Question text="Which of these are prime numbers?">
+        <Option correct>2</Option>
+        <Option correct>3</Option>
+        <Option>4</Option>
+        <Option correct>5</Option>
+      </Question>
+    </Quiz>
+    ```
+    
+    **Best for:** Complex concepts with multiple facets, category classification
+  </Tab>
+</Tabs>
+
+### Adding Explanations
+
+Provide feedback for each answer:
+
+```markdown
+<Quiz>
+  <Question text="What is 2 + 2?">
+    <Option correct explanation="Correct! 2 + 2 equals 4.">4</Option>
+    <Option explanation="Not quite. Try adding the numbers again.">5</Option>
+    <Option explanation="This is too low. Count carefully.">3</Option>
+  </Question>
+</Quiz>
+```
+
+<Note>
+  Always include explanations for both correct and incorrect answers to maximize learning opportunities.
+</Note>
+
+---
+
+## Flashcard Component
+
+Create spaced repetition flashcards for memorization and review.
+
+### Basic Flashcard Structure
+
+```markdown
+<Flashcard>
+  <Front>
+    What year did World War II end?
+  </Front>
+  <Back>
+    1945
+  </Back>
+</Flashcard>
+```
+
+### Advanced Flashcards
+
+Include images, hints, and additional context:
+
+```markdown
+<Flashcard difficulty="medium">
+  <Front>
+    <img src="/images/painting.jpg" />
+    Who painted this masterpiece?
+  </Front>
+  <Hint>
+    This Dutch post-impressionist created "Starry Night"
+  </Hint>
+  <Back>
+    Vincent van Gogh
+    
+    **Additional Context:**
+    Painted in 1889 during his stay at Saint-Rémy-de-Provence
+  </Back>
+</Flashcard>
+```
+
+### Creating Flashcard Decks
+
+Group related flashcards into study decks:
+
+```markdown
+<FlashcardDeck title="Spanish Vocabulary - Unit 3">
+  <Flashcard>
+    <Front>Hello</Front>
+    <Back>Hola</Back>
+  </Flashcard>
+  
+  <Flashcard>
+    <Front>Goodbye</Front>
+    <Back>Adiós</Back>
+  </Flashcard>
+  
+  <!-- More cards... -->
+</FlashcardDeck>
+```
+
+<Warning>
+  For optimal learning, keep flashcard decks to 20-30 cards. Break larger topics into multiple smaller decks.
+</Warning>
+
+---
+
+## Example Component
+
+Illustrate concepts with real-world examples and case studies.
+
+### Example Structure
+
+```markdown
+<Example title="Newton's Third Law in Action">
+  <Scenario>
+    When a swimmer pushes off the wall of a pool...
+  </Scenario>
+  
+  <Explanation>
+    The swimmer exerts a force on the wall (action), and the wall exerts an equal 
+    and opposite force on the swimmer (reaction), propelling them forward.
+  </Explanation>
+  
+  <Application>
+    This same principle applies to rocket propulsion, walking, and rowing.
+  </Application>
+</Example>
+```
+
+### Example Types
+
+<CardGroup cols={2}>
+  <Card title="Worked Examples" icon="calculator">
+    Step-by-step problem solving
+  </Card>
+  
+  <Card title="Case Studies" icon="briefcase">
+    Real-world applications
+  </Card>
+  
+  <Card title="Analogies" icon="equals">
+    Relatable comparisons
+  </Card>
+  
+  <Card title="Demonstrations" icon="flask">
+    Experimental scenarios
+  </Card>
+</CardGroup>
+
+---
+
+## Callout Components
+
+Draw attention to important information with various callout styles.
+
+### Note - General Information
+
+```markdown
+<Note>
+  This concept will be important for understanding the next section.
+</Note>
+```
+
+### Tip - Helpful Advice
+
+```markdown
+<Tip>
+  Try using mnemonics to remember the order of operations: PEMDAS 
+  (Please Excuse My Dear Aunt Sally)
+</Tip>
+```
+
+### Warning - Caution
+
+```markdown
+<Warning>
+  This is a common misconception! Mass and weight are not the same thing.
+</Warning>
+```
+
+### Info - Additional Context
+
+```markdown
+<Info>
+  For more advanced students: This relates to the concept of entropy 
+  in thermodynamics.
+</Info>
+```
+
+---
+
+## Code Block Component
+
+Display and explain programming code with syntax highlighting.
+
+### Basic Code Block
+
+````markdown
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+```
+````
+
+### Interactive Code
+
+Add explanations and line-by-line annotations:
+
+````markdown
+```python
+# Calculate the factorial of a number
+def factorial(n):
+    # Base case: factorial of 0 or 1 is 1
+    if n <= 1:
+        return 1
+    # Recursive case: n! = n × (n-1)!
+    return n * factorial(n - 1)
+
+# Test the function
+result = factorial(5)  # Returns 120
+```
+
+<CodeExplanation>
+  This recursive function calculates factorials by breaking down each number 
+  into smaller subproblems until reaching the base case.
+</CodeExplanation>
+````
+
+### Supported Languages
+
+- Python, JavaScript, TypeScript
+- Java, C++, C#
+- HTML, CSS, SQL
+- Ruby, PHP, Go
+- And many more...
+
+<Tip>
+  Use line highlighting to draw attention to specific parts of the code that you're explaining.
+</Tip>
+
+---
+
+## Media Components
+
+Enhance learning with visual and interactive media.
+
+### Images
+
+```markdown
+<Image 
+  src="/diagram.png" 
+  alt="Cell structure diagram"
+  caption="Figure 1: Basic structure of an animal cell"
+/>
+```
+
+### Videos
+
+```markdown
+<video controls className="w-full aspect-video" src="/lesson-video.mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
+### Diagrams and Charts
+
+```markdown
+<Diagram type="flowchart">
+  <!-- Interactive diagram data -->
+</Diagram>
+```
+
+---
+
+## Best Practices for Component Usage
+
+<AccordionGroup>
+  <Accordion icon="balance-scale" title="Balance and Variety">
+    - Use a mix of components to maintain engagement
+    - Don't overuse any single component type
+    - Match components to learning objectives
+    - Consider your students' learning styles
+  </Accordion>
+
+  <Accordion icon="layer-group" title="Logical Structure">
+    - Start with definitions to establish vocabulary
+    - Follow with examples to illustrate concepts
+    - Use quizzes to assess understanding
+    - End with flashcards for review and memorization
+  </Accordion>
+
+  <Accordion icon="users" title="Student-Centered Design">
+    - Make content scannable with clear headings
+    - Use callouts to highlight key takeaways
+    - Provide immediate feedback in quizzes
+    - Include hints in challenging questions
+  </Accordion>
+
+  <Accordion icon="mobile" title="Mobile Optimization">
+    - Keep flashcards concise for small screens
+    - Ensure images are responsive
+    - Test interactive components on mobile devices
+    - Use shorter paragraphs for readability
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Component Examples Gallery
+
+See these components in action:
+
+<CardGroup cols={2}>
+  <Card title="Sample Lesson" icon="book" href="#">
+    View a complete lesson using all components
+  </Card>
+  
+  <Card title="Component Templates" icon="file-code" href="#">
+    Download ready-to-use component templates
+  </Card>
+  
+  <Card title="Community Examples" icon="users" href="/use-cases/community-showcase">
+    See how other educators structure content
+  </Card>
+  
+  <Card title="AI Generation Tips" icon="wand-magic-sparkles" href="/prompt-engineering/prompt-better-in-eduarc">
+    Learn to prompt AI for better components
+  </Card>
+</CardGroup>
+
+---
+
+## Next Steps
+
+<Steps>
+  <Step title="Explore Core Features">
+    Learn about [uploading, generating, and publishing](/features/core-features) content
+  </Step>
+  
+  <Step title="Try It Yourself">
+    Head to the [EduArc AI platform](https://www.eduarc.ai/) and experiment with components
+  </Step>
+  
+  <Step title="Get Inspiration">
+    Browse the [community showcase](/use-cases/community-showcase) for ideas
+  </Step>
+</Steps>
+
