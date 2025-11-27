@@ -1,80 +1,112 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Start building awesome teaching content in minutes"
 ---
 
-## Get started in three steps
+## Get started with EduArc AI in four steps
 
-Get your documentation site running locally and make your first customization.
+Start creating, enhancing, and sharing educational content with AI in just minutes.
 
-### Step 1: Set up your local environment
+### Step 1: Create an account or sign in
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion icon="user-plus" title="Register or Sign In">
+    Head to the [EduArc AI platform](https://www.eduarc.ai/) and create your free account or log in if you already have one.<br /><br />
+    Access your personal workspace to start managing and generating teaching materials.
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+### Step 2: Create a New Project
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+  <Accordion icon="folder-plus" title="Start Your Project">
+    Click <b>New Project</b> in your dashboard.<br />
+    <ul>
+      <li>Give your project a name.</li>
+    </ul>
+    <video controls className="w-full aspect-video" src="/Create Project.mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br />
+    <ul>
+      <li>Choose to <b>upload your PDF notes</b> or let the AI help generate materials for you.</li>
+    </ul>
+    <video controls className="w-full aspect-video" src="/Upload pdf.mp4">
+      Your browser does not support the video tag.
+    </video>
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+### Step 3: Review and Edit with AI
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+<AccordionGroup>
+  <Accordion icon="comments" title="Chat & Edit with AI">
+    Work together with the AI agent to refine your content and structure.<br />
+    <ul>
+      <li>Ask questions or request changes using the AI chat.</li>
+      <li>Restructure sections, add media, or clarify concepts as you wish.</li>
+    </ul>
+    <Tip>
+      Explore more advanced features in the <b><a href="/features/uploading-content">Features</a></b> tab.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
 
-## Next steps
+### Step 4: Publish and Share
 
-Now that you have your docs running, explore these key features:
+---
 
-<CardGroup cols={2}>
+<div style={{display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '2rem', marginBottom: '2rem'}}>
+  <span style={{fontWeight: 600, fontSize: '1.1rem'}}>Was this page helpful?</span>
+  <button
+    onClick={() => {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'page_helpful_yes', {
+          page_path: '/quickstart',
+          page_title: 'Quickstart'
+        });
+      }
+      alert('Thank you for your feedback!');
+    }}
+    style={{
+      background: '#e5f9ee',
+      border: '1px solid #83e1b3',
+      color: '#1a8350',
+      borderRadius: '6px',
+      padding: '0.4rem 1.2rem',
+      cursor: 'pointer',
+      fontWeight: 600
+    }}
+    aria-label="Yes"
+  >
+    Yes
+  </button>
+  <button
+    onClick={() => {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'page_helpful_no', {
+          page_path: '/quickstart',
+          page_title: 'Quickstart'
+        });
+      }
+      alert('Thank you for your feedback! We\'ll work on improving this page.');
+    }}
+    style={{
+      background: '#fbeaea',
+      border: '1px solid #f18a99',
+      color: '#a83241',
+      borderRadius: '6px',
+      padding: '0.4rem 1.2rem',
+      cursor: 'pointer',
+      fontWeight: 600
+    }}
+    aria-label="No"
+  >
+    No
+  </button>
+</div>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Need help?** Join our [community](/use-cases/community-showcase).
 </Note>
